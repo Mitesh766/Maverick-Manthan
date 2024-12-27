@@ -16,6 +16,68 @@ const ShopContextProvider = (props) => {
     const [showSearch, setShowSearch] = useState(false)
     const [cartItems, setCartItems] = useState({})
     const navigate= useNavigate()
+    const clothData = [
+        {
+          productId: 'a1',
+          name: 'Anarkali',
+          price: '₹3,000 - ₹8,000',
+          size: 'XS - XL',
+          category: "Women’s Clothing",
+          subCategory: "Kurtas",
+          description:
+            'A beautiful Anarkali dress, perfect for weddings and formal events, made with rich fabric and delicate embroidery.',
+          image:
+            'https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/e/m/embroidered-georgette-anarkali-suit-in-red-v1-kch8719.jpg',
+        },
+        {
+          productId: 'a2',
+          name: 'Banarasi Saree',
+          price: '₹3,000 - ₹12,000',
+          size: 'Free size',
+          category: "Women’s Clothing",
+          subCategory: "Sarees",
+          description:
+            'A luxurious Banarasi saree made with authentic silk, featuring intricate brocade work.',
+          image:
+            'https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/b/a/banarasi-saree-in-fuchsia-v1-sew7315.jpg',
+        },
+        {
+          productId: 'a3',
+          name: 'Cotton Kurta-Pajama',
+          price: '₹1,500 - ₹4,000',
+          size: 'S - XL',
+          category: "Men’s Clothing",
+          subCategory: 'Kurtas',
+          description: 'A simple yet elegant cotton kurta-pajama set, ideal for day-to-day wear.',
+          image:
+            'https://manyavar.scene7.com/is/image/manyavar/SDES1009_322-Wine_301.1309_29-07-2024-17-40:283x395',
+        },
+        {
+          productId: 'a4',
+          name: 'Jodhpuri Suit',
+          price: '₹8,000 - ₹20,000',
+          size: 'S - XL',
+          category: "Men’s Clothing",
+          subCategory: 'Suit',
+          description:
+            'A royal Jodhpuri suit with detailed embroidery, crafted from high-quality fabric.',
+          image:
+            'https://manyavar.scene7.com/is/image/manyavar/CTSD1325V_306-Dark+Blue_701.0720_29-07-2024-22-03:283x395',
+        },
+        {
+          productId: 'a5',
+          name: 'Chaniya Choli',
+          price: '₹5,000 - ₹15,000',
+          size: 'XS - XL',
+          category: "Women’s Clothing",
+          subCategory: 'Ethnic Wear',
+          description:
+            'A colorful and festive Chaniya Choli made from premium cotton or silk with elaborate mirror work.',
+          image:
+            'https://manyavar.scene7.com/is/image/manyavar/SKT4874-418-ORANGE+(1)_16-04-2024-12-46:283x395',
+        },
+      ];
+      
 
     const addToCart = async (itemId, size) => {
 
@@ -82,7 +144,7 @@ const ShopContextProvider = (props) => {
     }
 
 
-    const value = { products, currency, delivery_fee, search, setSearch, showSearch, setShowSearch, addToCart, cartItems, getCartCount, updateQuantity,getCartAmount,navigate }
+    const value = { products, currency, delivery_fee, search, setSearch, showSearch, setShowSearch, addToCart, cartItems, getCartCount, updateQuantity,getCartAmount,navigate,clothData }
     return (
         <ShopContext.Provider value={value}>
             {props.children}

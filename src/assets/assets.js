@@ -62,9 +62,9 @@ import craft from './craft.jpeg'
 
 
 
-import img1 from './img1.jpg'
-import img2 from './img2.jpg'
-import img3 from './img3.jpg'
+import img1 from './img1.png'
+import img2 from './img2.png'
+import img3 from './img3.png'
 import img4 from './img4.png'
 
 

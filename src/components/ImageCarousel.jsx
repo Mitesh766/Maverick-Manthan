@@ -12,13 +12,30 @@ const ImageCarousel = () => {
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [scrollingForward, setScrollingForward] = useState(true); // Track scrolling direction
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+            setCurrentIndex((prevIndex) => {
+                if (scrollingForward) {
+                    // Moving forward
+                    if (prevIndex === images.length - 1) {
+                        setScrollingForward(false); // Reverse direction
+                        return prevIndex - 1;
+                    }
+                    return prevIndex + 1;
+                } else {
+                    // Moving backward
+                    if (prevIndex === 0) {
+                        setScrollingForward(true); // Reverse direction
+                        return prevIndex + 1;
+                    }
+                    return prevIndex - 1;
+                }
+            });
         }, 3000); // Change image every 3 seconds
         return () => clearInterval(interval); // Cleanup interval on unmount
-    }, [images.length]);
+    }, [images.length, scrollingForward]); // Dependency array now includes scrollingForward
 
     // Hide the carousel on the /login route
     if (location.pathname === "/login") {
@@ -26,26 +43,24 @@ const ImageCarousel = () => {
     }
 
     return (
-        <div className="relative mx-auto  bg-black flex justify-center ">
-            <div className="relative overflow-hidden rounded-lg shadow-lg  w-4/5 ">
+        <div className="relative w-full h-[90vh] mx-auto">
+            <div className="relative overflow-hidden rounded-lg shadow-lg">
                 <div
                     className="flex transition-transform duration-500 ease-in-out"
-                    style={{
-                        transform: `translateX(-${currentIndex * 100}%)`,
-                    }}
+                    style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                 >
                     {images.map((image, index) => (
-                        <div key={index} className="w-full flex-shrink-0">
+                        <div key={index} className="w-full h-[90vh] flex-shrink-0">
                             <img
                                 src={image}
                                 alt={`Traditional Clothing ${index + 1}`}
-                                className="w-full h-[30rem]  rounded-lg" // Set height to 80 and ensure the image covers the area without overflow
+                                className="w-full h-[60vh] sm:h-[90vh] md:h-[80vh] object-center rounded-lg"
                             />
                         </div>
                     ))}
                 </div>
             </div>
-            <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-2">
+            <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
                 {images.map((_, index) => (
                     <div
                         key={index}
