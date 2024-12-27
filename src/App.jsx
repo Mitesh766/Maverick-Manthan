@@ -15,7 +15,7 @@ const App = () => {
     <div className="">
       <ToastContainer/>
       <Navbar />
-      <ImageCarousel/>
+      
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/login" element={<Login />}></Route>

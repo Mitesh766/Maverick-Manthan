@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Link, NavLink } from 'react-router';
 import { assets } from '../assets/assets';
 import { useContext, useState } from 'react';

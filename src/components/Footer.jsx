@@ -30,7 +30,6 @@ const Footer = () => {
                         <li>Instagram</li>
                     </ul>
                 </div>
-
             </div>
             <div >
                 <hr />
