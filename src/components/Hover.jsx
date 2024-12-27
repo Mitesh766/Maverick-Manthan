@@ -52,7 +52,7 @@ const Hover = () => {
           {divs.map((div) => (
             <div
               key={div.id}
-              className={`flex flex-col  items-center justify-center text-white bg-black/50 p-4 rounded-md cursor-pointer transition-all duration-300 transform hover:scale-100 ${
+              className={`flex flex-col  items-center justify-center text-white bg-black/50 p-4 rounded-md cursor-pointer transition-all duration-300 transform ${
                 activeDiv === div.id ? "opacity-100" : "opacity-0"
               }`}
               onMouseEnter={() => {
@@ -64,7 +64,7 @@ const Hover = () => {
                 height: "auto", // Each div takes its own height
               }}
             >
-              <h2 className="text-2xl font-semibold">{div.title}</h2>
+              <h2 className="text-xl font-semibold">{div.title}</h2>
               <p className="text-center mt-2">{div.description}</p>
             </div>
           ))}
