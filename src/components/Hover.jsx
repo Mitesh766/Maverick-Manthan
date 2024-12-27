@@ -61,7 +61,7 @@ const Hover = () => {
               }}
               style={{
                 width: "auto", // Each div takes its own width
-                height: "auto", // Each div takes its own height
+                height: "auto", 
               }}
             >
               <h2 className="text-xl font-semibold">{div.title}</h2>

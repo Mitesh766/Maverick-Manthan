@@ -65,8 +65,8 @@ import craft from './craft.jpeg'
 import img1 from './img1.jpg'
 import img2 from './img2.jpg'
 import img3 from './img3.jpg'
-import img4 from './img4.jpg'
-import img5 from './img5.jpg'
+import img4 from './img4.png'
+
 
 
 import logo from './logo.png'
@@ -111,7 +111,7 @@ export const assets = {
     img2,
     img3,
     img4,
-    img5,
+   
     soulful,
     festival,
     Timeless,

@@ -9,7 +9,7 @@ const Navbar = () => {
   const { setShowSearch, getCartCount } = useContext(ShopContext);
 
   return (
-    <div className="w-full flex justify-between items-center py-5 px-4 sm:px-10 bg-gradient-to-r from-yellow-100 to-orange-50 font-medium shadow-md">
+    <div className="w-full  flex justify-between items-center py-5 px-4 sm:px-10 bg-gradient-to-r from-yellow-100 to-orange-50 font-medium shadow-md">
       {/* Logo Section */}
       <Link to="/" className="text-2xl font-bold text-orange-800 whitespace-nowrap hover:text-orange-600 transition-all">
         𝔭α尺α𝐌ｐค𝔯卂

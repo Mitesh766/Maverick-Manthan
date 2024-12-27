@@ -9,7 +9,6 @@ const ImageCarousel = () => {
         `${assets.img2}`,
         `${assets.img3}`,
         `${assets.img4}`,
-        `${assets.img5}`,
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,24 +26,26 @@ const ImageCarousel = () => {
     }
 
     return (
-        <div className="relative w-full mx-auto">
-            <div className="relative overflow-hidden rounded-lg shadow-lg">
+        <div className="relative mx-auto  bg-black flex justify-center ">
+            <div className="relative overflow-hidden rounded-lg shadow-lg  w-4/5 h-[90vh] py-6">
                 <div
                     className="flex transition-transform duration-500 ease-in-out"
-                    style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+                    style={{
+                        transform: `translateX(-${currentIndex * 100}%)`,
+                    }}
                 >
                     {images.map((image, index) => (
-                        <div key={index} className="w-full h-full flex-shrink-0">
+                        <div key={index} className="w-full flex-shrink-0">
                             <img
                                 src={image}
                                 alt={`Traditional Clothing ${index + 1}`}
-                                className="w-full h-1/3 object-cover rounded-lg"
+                                className="w-full h-[30rem]  rounded-lg" // Set height to 80 and ensure the image covers the area without overflow
                             />
                         </div>
                     ))}
                 </div>
             </div>
-            <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+            <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-2">
                 {images.map((_, index) => (
                     <div
                         key={index}
