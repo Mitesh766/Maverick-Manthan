@@ -27,7 +27,7 @@ const ImageCarousel = () => {
     }
 
     return (
-        <div className="relative w-full mx-auto mt-10">
+        <div className="relative w-full mx-auto">
             <div className="relative overflow-hidden rounded-lg shadow-lg">
                 <div
                     className="flex transition-transform duration-500 ease-in-out"

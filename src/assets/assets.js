@@ -53,6 +53,14 @@ import p_img49 from './p_img49.png'
 import p_img50 from './p_img50.png'
 import p_img51 from './p_img51.png'
 import p_img52 from './p_img52.png'
+import soulful from './soulful.jpeg'
+import festival from './festival.jpg'
+import Timeless from './Timeless.jpg'
+import craft from './craft.jpeg'
+
+
+
+
 
 import img1 from './img1.jpg'
 import img2 from './img2.jpg'
@@ -103,7 +111,11 @@ export const assets = {
     img2,
     img3,
     img4,
-    img5
+    img5,
+    soulful,
+    festival,
+    Timeless,
+    craft
 }
 
 export const products = [
