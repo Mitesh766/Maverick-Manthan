@@ -27,7 +27,7 @@ const ImageCarousel = () => {
 
     return (
         <div className="relative mx-auto  bg-black flex justify-center ">
-            <div className="relative overflow-hidden rounded-lg shadow-lg  w-4/5 h-[90vh] py-6">
+            <div className="relative overflow-hidden rounded-lg shadow-lg  w-4/5 ">
                 <div
                     className="flex transition-transform duration-500 ease-in-out"
                     style={{
