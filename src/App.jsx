@@ -33,7 +33,7 @@ const App = () => {
         <Route path="/clothing" element={< Clothing/>}></Route>
         <Route path="/clothing/:clothId" element={<ProductInfo />}></Route>
         <Route path="/handicraft" element={< Handicraft/>}></Route>
-        <Route path="/knowyourculture" element={<Blog />}></Route>
+        <Route path="/knowyourculture#blg" element={<Blog />}></Route>
         <Route path="/knowyourculture/rajasthan" element={<RajasthaniElegance />}></Route>
         <Route path="/knowyourculture/maharashtra" element={<MaharashtrianElegance />}></Route>
         <Route path="/knowyourculture/andhra-pradesh" element={<AndhraPradeshElegance />}></Route>

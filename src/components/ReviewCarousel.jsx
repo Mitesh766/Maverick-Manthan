@@ -31,7 +31,7 @@ const ReviewCarousel = () => {
                     return prevIndex - 1;
                 }
             });
-        }, 3000); // Change review every 3 seconds
+        }, 8000); // Change review every 3 seconds
         return () => clearInterval(interval); // Cleanup interval on unmount
     }, [reviews.length, scrollingForward]); // Dependency array now includes scrollingForward
 

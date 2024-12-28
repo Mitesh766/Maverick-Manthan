@@ -45,7 +45,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="bg-gray-100 font-serif">
+    <div className="bg-gray-100 font-serif" id="blg">
       <div className="text-center py-6">
         <h1 className="text-4xl font-bold text-orange-700">Explore Indian Tradition</h1>
       </div>
