@@ -23,15 +23,13 @@ const Navbar = () => {
         <NavLink to="/clothing" className="hover:text-orange-600 transition-colors">
           CLOTHING
         </NavLink>
-        <NavLink to="/accessories" className="hover:text-orange-600 transition-colors">
-          ACCESSORIES
+        <NavLink to="/knowyourculture" className="hover:text-orange-600 transition-colors">
+          HERITAGE
         </NavLink>
         <NavLink to="/handicraft" className="hover:text-orange-600 transition-colors">
           HANDICRAFT
         </NavLink>
-        <NavLink to="/about" className="hover:text-orange-600 transition-colors">
-          ABOUT
-        </NavLink>
+       
       </ul>
 
       {/* Icons Section */}

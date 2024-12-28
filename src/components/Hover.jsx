@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { assets } from "../assets/assets";
 
@@ -60,7 +59,7 @@ const Hover = () => {
                 setImage(div.image);
               }}
               style={{
-                width: "auto", // Each div takes its own width
+                width: "auto", 
                 height: "auto", 
               }}
             >

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ShopContext } from "../context/ShopContext";
 import ReviewCarousel from "../components/ReviewCarousel";
-import { Link } from "react-router";
+
 
 const Handicraft = () => {
     const { currency } = useContext(ShopContext);

@@ -63,11 +63,8 @@ import craft from './craft.jpeg'
 
 
 import img1 from './img1.png'
-import img2 from './img2.png'
-import img3 from './img3.png'
+import img2 from './img2.jpg'
 import img4 from './img4.png'
-
-
 
 import logo from './logo.png'
 import hero_img from './hero_img.png'
@@ -109,7 +106,6 @@ export const assets = {
     cross_icon,
     img1,
     img2,
-    img3,
     img4,
    
     soulful,

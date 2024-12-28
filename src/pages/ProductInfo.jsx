@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { ShopContext } from "../context/ShopContext";

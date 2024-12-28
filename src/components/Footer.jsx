@@ -1,5 +1,3 @@
-import { assets } from "../assets/assets";
-
 const Footer = () => {
     return (
         <div className="bg-gradient-to-r from-yellow-200 to-orange-200 py-10">
