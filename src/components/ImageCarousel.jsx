@@ -39,7 +39,7 @@ const ImageCarousel = () => {
     // Hide the carousel on the /login route
     if (location.pathname === "/login") {
         return null;
-    }
+     
 
     return (
         <div className="relative w-full h-[90vh] mx-auto">
