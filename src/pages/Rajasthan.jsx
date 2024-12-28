@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const RajasthanElegance = () => {
     return (
@@ -91,7 +91,7 @@ const RajasthanElegance = () => {
                 <div className="w-full sm:w-1/3">
                     <h4 className="font-semibold">Men</h4>
                     <p>
-                        Men's traditional wear features the <span className="text-[#8b0000] font-bold">dhoti</span> and{" "}
+                        Men&apos;s traditional wear features the <span className="text-[#8b0000] font-bold">dhoti</span> and{" "}
                         <span className="text-[#8b0000] font-bold">angrakha</span>, often paired with a majestic{" "}
                         <span className="text-[#daa520] italic">turban</span>. Comfort meets elegance with these airy and
                         regal garments.
@@ -119,7 +119,7 @@ const RajasthanElegance = () => {
                 <div className="w-full sm:w-1/3">
                     <p>
                         Special designs, such as the festive <span className="text-[#8b0000] font-bold">safa</span>, add a
-                        touch of grandeur to Rajasthan's ethnic wear traditions.
+                        touch of grandeur to Rajasthan&apos;s ethnic wear traditions.
                     </p>
                 </div>
             </div>

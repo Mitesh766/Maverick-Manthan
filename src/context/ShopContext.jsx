@@ -21,7 +21,7 @@ const ShopContextProvider = (props) => {
           productId: 'a1',
           name: 'Anarkali',
           price: '₹3,000 - ₹8,000',
-          size: 'XS - XL',
+          sizes: ["M", "L", "XL"],
           category: "Women’s Clothing",
           subCategory: "Kurtas",
           description:
@@ -33,7 +33,7 @@ const ShopContextProvider = (props) => {
           productId: 'a2',
           name: 'Banarasi Saree',
           price: '₹3,000 - ₹12,000',
-          size: 'Free size',
+          sizes: ["M", "L", "XL"],
           category: "Women’s Clothing",
           subCategory: "Sarees",
           description:
@@ -45,7 +45,7 @@ const ShopContextProvider = (props) => {
           productId: 'a3',
           name: 'Cotton Kurta-Pajama',
           price: '₹1,500 - ₹4,000',
-          size: 'S - XL',
+          sizes: ["M", "L", "XL"],
           category: "Men’s Clothing",
           subCategory: 'Kurtas',
           description: 'A simple yet elegant cotton kurta-pajama set, ideal for day-to-day wear.',
@@ -56,7 +56,7 @@ const ShopContextProvider = (props) => {
           productId: 'a4',
           name: 'Jodhpuri Suit',
           price: '₹8,000 - ₹20,000',
-          size: 'S - XL',
+          sizes: ["M", "L", "XL"],
           category: "Men’s Clothing",
           subCategory: 'Suit',
           description:
@@ -68,7 +68,7 @@ const ShopContextProvider = (props) => {
           productId: 'a5',
           name: 'Chaniya Choli',
           price: '₹5,000 - ₹15,000',
-          size: 'XS - XL',
+          sizes: ["M", "L", "XL"],
           category: "Women’s Clothing",
           subCategory: 'Ethnic Wear',
           description:
