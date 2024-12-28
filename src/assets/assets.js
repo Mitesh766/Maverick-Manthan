@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import p_img1 from './p_img1.png'
 import p_img2_1 from './p_img2_1.png'
 import p_img2_2 from './p_img2_2.png'
@@ -63,7 +64,7 @@ import craft from './craft.jpeg'
 
 
 import img1 from './img1.png'
-import img2 from './img2.jpg'
+import img2 from './img2.png'
 import img4 from './img4.png'
 
 import logo from './logo.png'

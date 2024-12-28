@@ -40,7 +40,7 @@ const Blog = () => {
         "Located in the western lands of India, bordered by Pakistan, stands the glorious state of Gujarat. Also known as the land of the Gurjans, Gujarat is a burst of colours, prints, embroideries and craftsmanship.",
       imgSrc:
         "https://img.perniaspopupshop.com/store-locator-v2/uploads/DP_Gujjarat_State_e33957f909.jpg",
-      redirectTo: "/knowyourculture/gujarat",
+      redirectTo: "/knowyourculture",
     },
   ];
 

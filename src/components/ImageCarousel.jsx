@@ -7,8 +7,7 @@ const ImageCarousel = () => {
     const images = [
         `${assets.img1}`,
         `${assets.img2}`,
-        `${assets.img4}`,
-        
+        `${assets.img4}`
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);

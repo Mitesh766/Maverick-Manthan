@@ -26,9 +26,9 @@ const Footer = () => {
                 <div className="flex flex-col gap-6">
                     <p className="text-xl font-medium mb-4 text-center sm:text-left text-red-600">GET IN TOUCH</p>
                     <ul className="flex flex-col gap-3 text-gray-600 text-center sm:text-left">
-                        <li className="hover:text-orange-600 cursor-pointer">+1-000-000-0000</li>
-                        <li className="hover:text-orange-600 cursor-pointer">dummy12@gmail.com</li>
-                        <li className="hover:text-orange-600 cursor-pointer">Instagram</li>
+                        <li className="hover:text-orange-600 cursor-pointer">91 7665086956</li>
+                        <li className="hover:text-orange-600 cursor-pointer">paramparaaajki@gmail.com</li>
+                       
                     </ul>
                 </div>
             </div>

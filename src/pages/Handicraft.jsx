@@ -10,9 +10,9 @@ const Handicraft = () => {
         <div className="bg-gradient-to-r from-yellow-200 to-orange-300 py-12">
             {/* Introduction Section */}
             <div className="text-center px-4 sm:px-10 md:px-20 mb-12">
-                <h2 className="text-3xl sm:text-4xl font-semibold text-gray-800 mb-4">
+                <p className="text-3xl sm:text-4xl  text-gray-800 mb-4">
                     India is a land of diverse cultures and rich traditions, with handicrafts reflecting its vibrant lifestyles. Crafted by over 20 million artisans, these eco-friendly creations support livelihoods and contribute to the economy. Made using simple tools and locally sourced materials, each piece tells the story of India&apos;s craftsmanship.
-                </h2>
+                </p>
             </div>
 
             {/* Handicraft Products Section */}

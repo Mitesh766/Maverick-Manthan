@@ -94,23 +94,23 @@ const Navbar = () => {
           <NavLink
             onClick={() => setVisible(false)}
             className="py-3 px-6 border-b hover:bg-orange-100"
-            to="/collection"
+            to="/clothing"
           >
-            COLLECTION
+            CLOTHING
           </NavLink>
           <NavLink
             onClick={() => setVisible(false)}
             className="py-3 px-6 border-b hover:bg-orange-100"
-            to="/categories"
+            to="/knowyourculture"
           >
-            SHOP BY CATEGORY
+            HERITAGE
           </NavLink>
           <NavLink
             onClick={() => setVisible(false)}
             className="py-3 px-6 border-b hover:bg-orange-100"
-            to="/offers"
+            to="/handicraft"
           >
-            FESTIVE OFFERS
+            HANDICRAFT
           </NavLink>
           <NavLink
             onClick={() => setVisible(false)}
@@ -119,13 +119,7 @@ const Navbar = () => {
           >
             ABOUT
           </NavLink>
-          <NavLink
-            onClick={() => setVisible(false)}
-            className="py-3 px-6 border-b hover:bg-orange-100"
-            to="/contact"
-          >
-            CONTACT
-          </NavLink>
+          
         </div>
       </div>
     </div>
