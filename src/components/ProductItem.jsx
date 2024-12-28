@@ -6,7 +6,7 @@ import { Link } from "react-router";
 
 const ProductItem = ({ productId, image, name, price, description }) => {
     const { currency } = useContext(ShopContext);
-    console.log(productId)
+    
     return (
         <Link className="text-gray-800 cursor-pointer" to={`/clothing/${productId}`}>
             <div className="bg-gradient-to-b from-yellow-100 via-orange-100 to-amber-200 shadow-xl rounded-lg overflow-hidden w-full h-[400px] flex flex-col transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl">

@@ -1,42 +1,47 @@
-import { assets } from "../assets/assets"
+import { assets } from "../assets/assets";
 
 const Footer = () => {
     return (
-        <div>
-            <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm">
-                <div>
-                    <img src={assets.logo} className="mb-5 w-32" alt="" />
-                    <p className="w-full md:w-2/3  text-gray-600 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nemo  natus similique vero sit odit nihil esse excepturi, earum  ut porro delectus quas sunt error amet cumque maiores sequi. Facilis adipisci enim modi impedit delectus quibusdam consequuntur placeat.</p>
+        <div className="bg-gradient-to-r from-yellow-200 to-orange-200 py-10">
+            {/* Main Content Section */}
+            <div className="flex flex-col sm:grid grid-cols-1 md:grid-cols-3 gap-10 my-10 text-sm px-4 sm:px-12">
+                {/* Brand Info Section */}
+                <div className="flex flex-col gap-4 sm:gap-6">
+                    <h1 className="text-3xl sm:text-4xl font-extrabold text-center sm:text-left text-red-600">PARAMPARA</h1>
+                    <p className="text-gray-600 text-center sm:text-left">
+                        PARAMPARA brings you traditional clothes from all over the world. Our collections are inspired by centuries-old craftsmanship and culture, beautifully crafted to add elegance to your wardrobe.
+                    </p>
                 </div>
 
-                <div>
-
-                    <p className="text-xl mb-5 font-medium ">COMPANY</p>
-                    <ul className="flex flex-col gap-1 text-gray-600">
-                        <li>Home</li>
-                        <li>About us</li>
-                        <li>Delivery </li>
-                        <li>Privacy Policy</li>
+                {/* Company Info Section */}
+                <div className="flex flex-col gap-6">
+                    <p className="text-xl font-medium mb-4 text-center sm:text-left text-red-600">COMPANY</p>
+                    <ul className="flex flex-col gap-3 text-gray-600 text-center sm:text-left">
+                        <li className="hover:text-orange-600 cursor-pointer">Home</li>
+                        <li className="hover:text-orange-600 cursor-pointer">About Us</li>
+                        <li className="hover:text-orange-600 cursor-pointer">Delivery</li>
+                        <li className="hover:text-orange-600 cursor-pointer">Privacy Policy</li>
                     </ul>
                 </div>
-                <div>
 
-                    <p className="text-xl mb-5 font-medium ">GET IN TOUCH</p>
-                    <ul className="flex flex-col gap-1 text-gray-600">
-                        <li>+1-000-000-0000
-                        </li>
-                        <li>dummy12@gmail.com
-                        </li>
-                        <li>Instagram</li>
+                {/* Contact Info Section */}
+                <div className="flex flex-col gap-6">
+                    <p className="text-xl font-medium mb-4 text-center sm:text-left text-red-600">GET IN TOUCH</p>
+                    <ul className="flex flex-col gap-3 text-gray-600 text-center sm:text-left">
+                        <li className="hover:text-orange-600 cursor-pointer">+1-000-000-0000</li>
+                        <li className="hover:text-orange-600 cursor-pointer">dummy12@gmail.com</li>
+                        <li className="hover:text-orange-600 cursor-pointer">Instagram</li>
                     </ul>
                 </div>
             </div>
-            <div >
-                <hr />
-                <p className="text-center py-5 text-sm">Copyright 2024@ MG - All Right Reserved.</p>
+
+            {/* Footer Bottom Section */}
+            <div className="text-center py-5     ">
+                <hr className="border-gray-400" />
+                <p className="text-sm text-gray-600 mt-3">© 2024 PARAMPARA - All Rights Reserved</p>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;

@@ -10,74 +10,127 @@ import { useNavigate } from "react-router";
 export const ShopContext = createContext()
 
 const ShopContextProvider = (props) => {
-    const currency = '$';
+    const currency = '₹';
     const delivery_fee = 10;
     const [search, setSearch] = useState('')
     const [showSearch, setShowSearch] = useState(false)
     const [cartItems, setCartItems] = useState({})
-    const navigate= useNavigate()
+    const navigate = useNavigate()
     const clothData = [
         {
-          productId: 'a1',
-          name: 'Anarkali',
-          price: '₹3,000 - ₹8,000',
+          productId: 'c1',
+          name: 'Kurta-Pajama',
+          price: '1,199',
           sizes: ["M", "L", "XL"],
-          category: "Women’s Clothing",
-          subCategory: "Kurtas",
-          description:
-            'A beautiful Anarkali dress, perfect for weddings and formal events, made with rich fabric and delicate embroidery.',
-          image:
-            'https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/e/m/embroidered-georgette-anarkali-suit-in-red-v1-kch8719.jpg',
+          description: 'A classic combination of a kurta and pajama. The kurta is a long tunic with detailed embroidery, perfect for casual outings, religious ceremonies, or festivals. The pajama adds comfort and elegance to the look.',
+          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnmdl118D64-nQdbR76v2wx21L8mKED2EudA&s',
         },
         {
-          productId: 'a2',
+          productId: 'c2',
+          name: 'Salwar Kameez',
+          price: '2,499',
+          sizes: ["M", "L", "XL"],
+          description: 'A timeless outfit featuring a long tunic (kameez) paired with loose trousers (salwar). This versatile and elegant ensemble is perfect for everyday wear or festive occasions.',
+          image: 'https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/d/i/digital-printed-art-silk-abaya-style-suit-in-olive-green-v1-kch11811.jpg',
+        },
+        {
+          productId: 'c3',
+          name: 'Churidar',
+          price: '1,799',
+          sizes: ["M", "L", "XL"],
+          description: 'The churidar is a tightly fitting trouser worn with a kameez or tunic. Its elegance and formality make it a great choice for special occasions, weddings, or cultural events.',
+          image: 'https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/b/d/bdw49.jpg',
+        },
+        {
+          productId: 'c4',
+          name: 'Lungi',
+          price: '699',
+          sizes: ["M", "L", "XL"],
+          description: 'A traditional garment from South India, the lungi is a simple piece of cloth wrapped around the waist, offering comfort and breathability. Ideal for casual wear and hot climates.',
+          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8jhCShdg2iiYK3AC8Sq4545oG27ir6XzYXQ&s',
+        },
+        {
+          productId: 'c5',
+          name: 'Dupatta',
+          price: '999',
+          sizes: ["One Size"],
+          description: 'A long scarf or shawl worn over the shoulder, often paired with salwar kameez or lehengas. This elegant accessory adds a touch of grace and modesty to the outfit.',
+          image: 'https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/b/a/banarasi-dupatta-in-fuchsia-v1-bup175_2.jpg',
+        },
+        {
+          productId: 'c10',
+          name: 'Brocade Kimono',
+          price: '6,499',
+          sizes: ["M", "L", "XL"],
+          description: 'A fusion garment that blends the traditional kimono design with Indian brocade fabrics. The brocade kimono is a luxurious choice for special events and celebrations.',
+          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLV99BMAvmTTDbaqAbCk15qGaLSQ00j7ybkA&s',
+        },
+        {
+          productId: 'c11',
+          name: 'Kanjivaram Saree',
+          price: '19,999',
+          sizes: ["One Size"],
+          description: 'A premium silk saree from Tamil Nadu, known for its intricate golden zari work. Worn during weddings and significant events, the Kanjivaram saree is a symbol of tradition and elegance.',
+          image: 'https://img.perniaspopupshop.com/catalog/product/k/a/KAST052203_2.jpg?impolicy=listingimagedesktop',
+        },
+        {
+          productId: 'c12',
+          name: 'Phulkari Embroidered Dress',
+          price: '2,499',
+          sizes: ["M", "L", "XL"],
+          description: 'This dress features the traditional Phulkari embroidery, known for its vibrant floral patterns. A perfect choice for casual wear and cultural festivals, embodying the rich heritage of Punjab.',
+          image: 'https://cdn0.weddingwire.in/article/9805/original/1280/jpg/75089-phulkari-embroidery-mr-and-mrs-planner-suit.jpeg',
+        },
+        {
+          productId: 'c14',
+          name: 'Madhubani Print Dress',
+          price: '3,499',
+          sizes: ["M", "L", "XL"],
+          description: 'A dress adorned with vibrant Madhubani prints, showcasing intricate floral, animal, and mythological designs. A unique fusion of art and fashion, perfect for casual wear or cultural festivals.',
+          image: 'https://ethnicrace.com/wp-content/uploads/2023/05/Buy-Madhubani-Printed-White-Indian-Evening-Gown-1.webp',
+        },
+        {
+          productId: 'a9',
+          name: 'Anarkali Dress',
+          price: '3,999',
+          sizes: ["M", "L", "XL"],
+          description: 'A beautiful traditional dress with a fitted bodice and a flowing skirt, perfect for weddings and formal occasions.',
+          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWb9PBfgzHkPfdBeq2QfkcjxSH5eqI3mnJqw&s',
+        },
+        {
+          productId: 'a10',
           name: 'Banarasi Saree',
-          price: '₹3,000 - ₹12,000',
-          sizes: ["M", "L", "XL"],
-          category: "Women’s Clothing",
-          subCategory: "Sarees",
-          description:
-            'A luxurious Banarasi saree made with authentic silk, featuring intricate brocade work.',
-          image:
-            'https://medias.utsavfashion.com/media/catalog/product/cache/1/small_image/295x/040ec09b1e35df139433887a97daa66f/b/a/banarasi-saree-in-fuchsia-v1-sew7315.jpg',
+          price: '7,999',
+          sizes: ["One Size"],
+          description: 'A luxurious saree known for its intricate patterns and use of zari thread, ideal for weddings and festive occasions.',
+          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ADd7JjxznZ1PhtWwU_ovA1omZZSk20-qA0hJrQ&s',
         },
         {
-          productId: 'a3',
+          productId: 'a11',
           name: 'Cotton Kurta-Pajama',
-          price: '₹1,500 - ₹4,000',
+          price: '999',
           sizes: ["M", "L", "XL"],
-          category: "Men’s Clothing",
-          subCategory: 'Kurtas',
-          description: 'A simple yet elegant cotton kurta-pajama set, ideal for day-to-day wear.',
-          image:
-            'https://manyavar.scene7.com/is/image/manyavar/SDES1009_322-Wine_301.1309_29-07-2024-17-40:283x395',
+          description: 'A lightweight cotton kurta and pajama set, perfect for casual wear during summer or spring festivals.',
+          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCbA3g9PRKlH9_dYg0eZZqJ8hpa_MyxGyFqBw&s',
         },
         {
-          productId: 'a4',
+          productId: 'a12',
           name: 'Jodhpuri Suit',
-          price: '₹8,000 - ₹20,000',
+          price: '5,499',
           sizes: ["M", "L", "XL"],
-          category: "Men’s Clothing",
-          subCategory: 'Suit',
-          description:
-            'A royal Jodhpuri suit with detailed embroidery, crafted from high-quality fabric.',
-          image:
-            'https://manyavar.scene7.com/is/image/manyavar/CTSD1325V_306-Dark+Blue_701.0720_29-07-2024-22-03:283x395',
+          description: 'A royal suit with intricate embroidery, often worn for formal occasions and royal gatherings.',
+          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpHzc1R5WZpXMj5JtIzD5zrk9Uev5wldHZ-Dg&s',
         },
         {
-          productId: 'a5',
+          productId: 'a13',
           name: 'Chaniya Choli',
-          price: '₹5,000 - ₹15,000',
+          price: '3,499',
           sizes: ["M", "L", "XL"],
-          category: "Women’s Clothing",
-          subCategory: 'Ethnic Wear',
-          description:
-            'A colorful and festive Chaniya Choli made from premium cotton or silk with elaborate mirror work.',
-          image:
-            'https://manyavar.scene7.com/is/image/manyavar/SKT4874-418-ORANGE+(1)_16-04-2024-12-46:283x395',
-        },
+          description: 'A vibrant and colorful outfit, consisting of a chaniya (skirt), choli (blouse), and dupatta, traditionally worn during dances and festivals.',
+          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSffNOqV7_JvYp9dO9dLhbts5FVzAIslB4udg&s',
+        }
       ];
-      
+
 
     const addToCart = async (itemId, size) => {
 
@@ -126,17 +179,17 @@ const ShopContextProvider = (props) => {
         setCartItems(cartData)
     }
 
-    const getCartAmount =  () => {
+    const getCartAmount = () => {
         let totalAmount = 0;
-        for(const items in cartItems){
-            let itemInfo=products.find((product)=>(product._id === items))
-            for(const item in cartItems[items]){
+        for (const items in cartItems) {
+            let itemInfo = products.find((product) => (product._id === items))
+            for (const item in cartItems[items]) {
                 try {
-                    if(cartItems[items][item]>0){
-                        totalAmount+=itemInfo.price*cartItems[items][item]
+                    if (cartItems[items][item] > 0) {
+                        totalAmount += itemInfo.price * cartItems[items][item]
                     }
                 } catch (error) {
-                    
+
                 }
             }
         }
@@ -144,7 +197,7 @@ const ShopContextProvider = (props) => {
     }
 
 
-    const value = { products, currency, delivery_fee, search, setSearch, showSearch, setShowSearch, addToCart, cartItems, getCartCount, updateQuantity,getCartAmount,navigate,clothData }
+    const value = { products, currency, delivery_fee, search, setSearch, showSearch, setShowSearch, addToCart, cartItems, getCartCount, updateQuantity, getCartAmount, navigate, clothData }
     return (
         <ShopContext.Provider value={value}>
             {props.children}

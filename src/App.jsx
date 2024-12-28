@@ -12,6 +12,8 @@ import { useContext } from "react"
 import { ShopContext } from "./context/ShopContext"
 import Clothing from "./pages/Clothing"
 import ProductInfo from "./pages/ProductInfo";
+import Footer from './components/Footer'
+import Handicraft from "./pages/Handicraft";
 
 const App = () => {
   const {productData}= useContext(ShopContext)
@@ -27,8 +29,10 @@ const App = () => {
         <Route path="/rajasthanwear" element={<RajasthanTraditionalWear />}></Route>
         <Route path="/clothing" element={< Clothing/>}></Route>
         <Route path="/clothing/:clothId" element={<ProductInfo />}></Route>
+        <Route path="/handicraft" element={< Handicraft/>}></Route>
+
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
